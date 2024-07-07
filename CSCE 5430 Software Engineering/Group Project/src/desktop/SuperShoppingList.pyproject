@@ -1,0 +1,3 @@
+{
+    "files": ["mainwindow.ui","ui/CreateARecipeWidget.ui","ShoppingListWidget.ui","ui/AddNewForm.ui","MealPlanWidget.ui","ui/DashboardWidget.ui","InventoryWidget.ui","mainwindow.py","RecipesWidget.ui"]
+}

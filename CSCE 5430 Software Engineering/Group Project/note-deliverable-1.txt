@@ -1,0 +1,4 @@
+Report:	 reports/Deliverable 1 - Project Proposal.pdf
+Presentation:  reports/Deliverable 1 - Presentation.pptx
+
+Note: The meeting minuets are Zoom recordings that GitHub says are too big to upload. The files can be found in the Google Folder (link on the README).

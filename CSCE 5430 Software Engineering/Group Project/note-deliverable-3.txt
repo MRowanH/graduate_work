@@ -1,0 +1,5 @@
+Phase 1 mobile App source code can be found in src -> app
+Phase 1 desktop App source code can be found in src -> desktop
+inspection-code-do's-8 can be found on the top level
+Updated meeting minutes can be found in meeting_minutes -> 2021-10-14 Deliv 3 discussion.txt
+Deliverable 3 Report can be found in reports -> Deliverable-3-report.pdf

@@ -1,0 +1,18 @@
+Source Code:
+	App: src > app
+	Desktop: src > desktop
+
+Deliverable 5 Report:
+
+
+Deliverable 5 Powerpoint:
+reports > Dos8-del-5.pptx
+reports > Dos8-del-5.pdf
+
+Deliverable 5 Meeting Minutes:
+meeting_minutes > 2021-11-16 Transcript.txt
+meeting_minutes > 2021-11-18 A Transcript.txt
+meeting_minutes > 2021-11-18 B Transcript.txt
+
+*Note 1: The 11/18 meetings are all one meeting. Mica was the host but disconnectd, ending with two recording of the same meeting.
+*Note 2: The video recordings of all meetings are in a Google Drive Folder (link in the README).

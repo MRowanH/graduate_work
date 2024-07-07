@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dos_8_Mobile</string>
+    <string name="instructions">The main objective of this application is to help you plan your meals and find recipes for those meals.
+    The ingredients for those meals would be automatically added to your shopping list and you can check them off as you buy them.</string>
+    <string name="instructions_title"><u>Instructions</u></string>
+    <string name="public_recepies">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus faucibus ligula eget erat molestie convallis. Nunc ullamcorper ex eu eros ornare fringilla. In elementum lobortis massa, eget cursus augue semper faucibus. In metus elit, scelerisque aliquet odio eu, porttitor maximus est. Quisque lacinia lorem non turpis porta dignissim. Etiam cursus, dolor in ultrices auctor, metus elit efficitur lacus, a vehicula est mauris nec tortor. Nam ut leo turpis. Etiam sodales, lacus at vulputate maximus, mauris nisi sollicitudin ligula, nec semper ex urna pharetra est. Donec nisl ex, faucibus et lacus at, sagittis mollis velit. Maecenas consectetur,</string>
+
+
+</resources>

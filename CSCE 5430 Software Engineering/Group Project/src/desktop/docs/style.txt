@@ -1,0 +1,35 @@
+style.txt
+
+this is a style guide for the project - contribute your ideas, strong opinions, and hot-takes for how code 
+should be written.
+The top of every code file should contain some sort of description like you see here.
+
+class NamesShouldBeCamelCased():
+    def functions_should_be_snake_cased() -> None:
+        variables_are_also_snake_cased = 1
+
+
+# function parameters should have typehints
+def some_function(f: float, i: int) -> None:  # functions should have return types
+    i = 1  # end of line comments should have two spaces before the comments
+    ...
+
+# block comments can be 
+# a lot of pounds
+''' or the python
+block comment
+your choice '''
+
+# docstrings should be avoided - put your comments up here
+def documentation()
+    ...  # inside the function body is for code, not the docs
+
+
+VALUES_MEANT_TO_BE_CONSTANT_SHOULD_BE_ALL_CAPS = "don't change me"
+
+TODO (who): has to do this thing is how we will keep in-code todos
+TODO: this can be done by anyone
+NOTE: is a good way to empasize that something worth explaining is happening
+FIXME: is fine... but why don't you just fix it?
+
+

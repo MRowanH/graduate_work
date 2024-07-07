@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00C853"
+        android:fontFamily="@font/aref_ruqaa"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/aref_ruqaa"
+            android:text="Shopping List"
+            android:textColor="#EFE6E6"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="#AEA7A7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="120dp"
+            android:fontFamily="@font/aref_ruqaa"
+            android:text=" My Recipe Books"
+            android:textAlignment="textStart"
+            android:textSize="26sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="504dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="132dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="179dp"
+                android:layout_marginBottom="335dp"
+                android:backgroundTint="#00C853"
+                android:text="Awesome Sushi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toEndOf="@+id/button23"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="132dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="328dp"
+                android:layout_marginBottom="186dp"
+                android:backgroundTint="#00C853"
+                android:text="Create A Recipe"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="132dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="179dp"
+                android:layout_marginBottom="335dp"
+                android:backgroundTint="#00C853"
+                android:text="Quick Dinners"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="132dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="479dp"
+                android:backgroundTint="#00C853"
+                android:text="Favorites"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button21"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="138dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="336dp"
+                android:layout_marginBottom="178dp"
+                android:backgroundTint="#00C853"
+                android:text="Add a Recipe Book"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button24"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></Button>
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="132dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="179dp"
+                android:layout_marginBottom="335dp"
+                android:backgroundTint="#00C853"
+                android:text="Grandma's Best"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button23"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="132dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="478dp"
+                android:backgroundTint="#00C853"
+                android:text="Public Recipes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button21"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="@android:color/holo_green_dark" />
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="132dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="479dp"
+                android:backgroundTint="#00C853"
+                android:text="My Recipes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="#00C853" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00C853"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#AEA7A7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="150dp"
+            android:fontFamily="@font/aref_ruqaa"
+            android:text="Dashboard"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayou6"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        >
+
+
+
+        <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="400dp"
+        android:background="#CFCFCF"
+        android:orientation="vertical"
+        android:clickable="true"
+
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        >
+
+
+
+
+            <Button
+                android:id="@+id/bacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Bacon"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+
+
+
+            <Button
+                android:id="@+id/best_pancake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Best \n Pancake"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/froasting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Froasting"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+
+            <Button
+                android:id="@+id/scrambled_egg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Scrambl \n Egg"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/grandma_oj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Grandma \n OJ"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/california_suhsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="california \n Sushui"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+         android:id="@+id/baconLayout"
+         android:layout_width="match_parent"
+         android:layout_height="500dp"
+         android:orientation="vertical"
+
+         >
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+         <Button
+             android:id="@+id/add_book"
+             android:layout_width="120dp"
+             android:layout_marginStart="15dp"
+             android:layout_height="wrap_content"
+             android:text="Add Recipies To Recipie Book"/>
+         <Button
+             android:id="@+id/add_meal"
+             android:layout_width="120dp"
+             android:layout_marginStart="15dp"
+             android:layout_height="wrap_content"
+             android:text="Add Recipies To Meal Plan"/>
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Bacon"
+                 android:padding="10dp"
+                 android:textSize="20sp"
+                 android:textStyle="bold"
+
+                 />
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@android:color/darker_gray"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Ingredients"
+                 android:padding="10dp"
+                 android:textStyle="bold"
+
+                 />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="♦ flour:  12 cups\n♦ Sugar:  2 cup\n♦ Egg:  3 Eggs \n♦ Milk:  2 Cup"
+                 android:padding="10dp"
+                 android:textStyle="bold"
+
+                 />
+
+         </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Instruction"
+                 android:padding="10dp"
+                 android:textStyle="bold"
+
+                 />
+
+         </LinearLayout>
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@android:color/darker_gray"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="1. Pre Heat the oven to 100 degree\n2. Combine flour sugar"
+                 android:padding="10dp"
+                 android:textStyle="bold"
+
+                 />
+
+         </LinearLayout>
+
+     </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bestpancakes"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Book"/>
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Meal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pancakes"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♦ flour:  12 cups\n♦ Sugar:  2 cup\n♦ Egg:  3 Eggs \n♦ Milk:  2 Cup"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instruction"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Pre Heat the oven to 100 degree\n2. Combine flour sugar"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/froastingbtn"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Book"/>
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Meal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Froasting"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♦ flour:  12 cups\n♦ Sugar:  2 cup\n♦ Egg:  3 Eggs \n♦ Milk:  2 Cup"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instruction"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Pre Heat the oven to 100 degree\n2. Combine flour sugar"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/scrambledegg"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Book"/>
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Meal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scrambled Egg"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♦ flour:  12 cups\n♦ Sugar:  2 cup\n♦ Egg:  3 Eggs \n♦ Milk:  2 Cup"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instruction"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Pre Heat the oven to 100 degree\n2. Combine flour sugar"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/granmaOj"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Book"/>
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Meal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grandma OJ"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♦ flour:  12 cups\n♦ Sugar:  2 cup\n♦ Egg:  3 Eggs \n♦ Milk:  2 Cup"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instruction"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Pre Heat the oven to 100 degree\n2. Combine flour sugar"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/californiaSuhsi"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Book"/>
+                <Button
+
+                    android:layout_width="120dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recepies To Meal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="California Sushi"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♦ flour:  12 cups\n♦ Sugar:  2 cup\n♦ Egg:  3 Eggs \n♦ Milk:  2 Cup"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instruction"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Pre Heat the oven to 100 degree\n2. Combine flour sugar"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="600dp"-->
+<!--        android:layout_marginTop="17dp"-->
+<!--        android:layout_marginBottom="504dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="158dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginStart="19dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="61dp"-->
+<!--            android:fontFamily="@font/aref_ruqaa"-->
+<!--            android:text="Public Recepies"-->
+<!--            android:textColor="#090808"-->
+<!--            android:textSize="25sp"-->
+
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView4"-->
+<!--            android:layout_width="380dp"-->
+<!--            android:layout_height="400dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:background="@drawable/textview_border"-->
+<!--            android:fontFamily="@font/atma_medium"-->
+<!--            android:text="@string/public_recepies"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="17sp"-->
+<!--            app:flow_horizontalAlign="center"-->
+<!--            app:flow_verticalAlign="center"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.184"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView"-->
+<!--            app:layout_constraintVertical_bias="0.0"-->
+<!--            tools:ignore="MissingPrefix" />-->
+
+
+
+
+<!--    </RelativeLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

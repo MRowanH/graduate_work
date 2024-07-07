@@ -1,0 +1,36 @@
+Qt things
+
+== Widgets ==
+Qt is a "widget based" ui framework. So, nearly everything that we do when it comes to Ui is a widget; even 
+the main window is a widget (just a special one).
+A widget is a python class. We will be making our own widgets that then use other widgets that are built into
+Qt, but for the "top level", so-to-speak, we have our own. These classes inherit from QWidget and then also
+need to inherit from a ui class; for example:
+
+class MealPlanWidget(QWidget, Ui_MealPlanWidget):                                    
+    def __init__(self):
+        QWidget.__init__(self)
+        self.setupUi(self)  # setupUi() here is a function from the Ui_meanPlanWidget class
+
+note: you could opt to not inherit from a ui file and just type out all of the ui elements in python code
+this would give a lot of control but would make the class pretty big (LOC) and takes a while.
+
+After we have our widget class made, we can instantiate it and put it somewhere (probably attach it to our
+mainwindow or something). That is the sort of flow for this (and a lot of other) qt apps - you have a main 
+window and that thing is full of widgets. Some widgets will appear and dissappear at different times according
+to input and sometimes those widgets can spawn in and occupy their own windows.
+
+parent widgets
+when you make widget, you always pass the "parent" of the widget as a parameter. For all of the widgets that are
+the actual tab pages, the parent will be "mainwindow". this means that from inside of all of the widgets that we
+make we can always access the mainwindow class. we can use this for sharing of data between all the different
+components.
+
+
+== link dump ==
+These are just links that i find while googling around that pertain specificially to implementation ideas
+for qt.
+
+* https://forum.qt.io/topic/109761/how-to-achieve-qt-card-based-layout/5
+  list of cards (2nd answer is so is the most useful) - could be useful for our list of recipes in the recipe
+  book as well as in the meal plan view since we want to have button attached to each item to add / remove
