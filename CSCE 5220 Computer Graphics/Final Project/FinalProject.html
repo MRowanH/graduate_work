@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Mica Haney -->
+<!-- CSCE 5220 Compouter Graphics -->
+<!-- Final Project -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project: Image Filter</title>
+  </head>
+
+  <body onload="main()">
+  
+	<!-- Canvas -->
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+	
+	<!-- Container for drop-down menu -->
+	<div id="dropDownContainer">
+		<label for="ddContainer">Choose and effect:</label>
+		<div class="ddContainer" id="ddContainer></div>
+	</div>
+	
+	<!-- Load files -->
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="FinalProject.js"></script>
+  </body>
+</html>
