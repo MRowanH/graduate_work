@@ -1,0 +1,1 @@
+Long Short-Term Memory (LSTM) is a kind of network that performs well in sequence problems, notably in translation tasks.

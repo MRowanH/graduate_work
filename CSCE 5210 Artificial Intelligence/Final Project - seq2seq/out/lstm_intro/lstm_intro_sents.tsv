@@ -1,0 +1,41 @@
+0	Deep Neural Networks (DNNs) are extremely powerful machine learning models that achieve excellent performance on difficult problems such as speech recognition [13, 7] and visual object recognition [19, 6, 21, 20].
+1	DNNs are powerful because they can perform arbitrary parallel a modest number of steps.
+2	A surprising example of the power of DNNs is their ability to N-bit numbers using only 2 hidden layers of quadratic size [27].
+3	So, while neural networks to conventional statistical models, they learn an intricate computation.
+4	Furthermore, can be trained with supervised backpropagation whenever the labeled training set has to specify the network’s parameters.
+5	Thus, if there exists a parameter setting of a that achieves good results (for example, because humans can solve the task very backpropagation will find these parameters and solve the problem.
+6	Despite their flexibility and power, DNNs can only be applied to problems whose inputs and be sensibly encoded with vectors of fixed dimensionality.
+7	It is a significant limitation, important problems are best expressed with sequences whose lengths are not known example, speech recognition and machine translation are sequential problems.
+8	Likewise, question answering can also be seen as mapping a sequence of words representing the question to of words representing the answer.
+9	It is therefore clear that a domain-independent learns to map sequences to sequences would be useful.
+10	Sequences pose a challenge for DNNs because they require that the dimensionality of the inputs is known and fixed.
+11	In this paper, we show that a straightforward application of the Memory (LSTM) architecture [16] can solve general sequence to sequence idea is to use one LSTM to read the input sequence, one timestep at a time, to obtain large fixeddimensional vector representation, and then to use another LSTM to extract the output that vector (fig.
+12	1).
+13	The second LSTM is essentially a recurrent neural network language 23, 30] except that it is conditioned on the input sequence.
+14	The LSTM’s ability to on data with long range temporal dependencies makes it a natural choice for this to the considerable time lag between the inputs and their corresponding outputs (fig.
+15	1).
+16	There have been a number of related attempts to address the general sequence to sequence with neural networks.
+17	Our approach is closely related to Kalchbrenner and Blunsom were the first to map the entire input sentence to vector, and is related to Cho et al.
+18	[5] latter was used only for rescoring hypotheses produced by a phrase-based system.
+19	Graves a novel differentiable attention mechanism that allows neural networks to focus on different parts of their input, and an elegant variant of this idea was successfully applied to by Bahdanau et al.
+20	[2].
+21	The Connectionist Sequence Classification is another for mapping sequences to sequences with neural networks, but it assumes a between the inputs and the outputs [11].
+22	Figure
+23	1: Our model reads an input sentence “ABC” and produces “WXYZ” as the output sentence.
+24	stops making predictions after outputting the end-of-sentence token.
+25	Note that the LSTM reads sentence in reverse, because doing so introduces many short term dependencies in the data that make problem much easier.
+26	The main result of this work is the following.
+27	On the WMT’14 English to French translation obtained a BLEU score of 34.81 by directly extracting translations from an ensemble of 5 (with 384M parameters and 8,000 dimensional state each) using a simple left-to-right beamsearch decoder.
+28	This is by far the best result achieved by direct translation with large neural networks.
+29	For comparison, the BLEU score of an SMT baseline on this dataset is 33.30 [29].
+30	The score was achieved by an LSTM with a vocabulary of 80k words, so the score was the reference translation contained a word not covered by these 80k.
+31	This result a relatively unoptimized small-vocabulary neural network architecture which has much improvement outperforms a phrase-based SMT system.
+32	Finally, we used the LSTM to rescore the publicly available 1000-best lists of the SMT baseline same task [29].
+33	By doing so, we obtained a BLEU score of 36.5, which improves the baseline BLEU points and is close to the previous best published result on this task (which is 37.0 [9]).
+34	Surprisingly, the LSTM did not suffer on very long sentences, despite the recent experience of with related architectures [26].
+35	We were able to do well on long sentences because the order of words in the source sentence but not the target sentences in the training and By doing so, we introduced many short term dependencies that made the optimization simpler (see sec. 2 and 3.3).
+36	As a result, SGD could learn LSTMs that had no trouble sentences.
+37	The simple trick of reversing the words in the source sentence is one of the contributions of this work.
+38	A useful property of the LSTM is that it learns to map an input sentence of variable length fixed-dimensional vector representation.
+39	Given that translations tend to be paraphrases of sentences, the translation objective encourages the LSTM to find sentence capture their meaning, as sentences with similar meanings are close to each other while meanings will be far.
+40	A qualitative evaluation supports this claim, showing that our aware of word order and is fairly invariant to the active and passive voice.

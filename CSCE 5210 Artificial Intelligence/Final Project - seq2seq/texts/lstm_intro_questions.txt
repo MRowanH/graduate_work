@@ -1,0 +1,10 @@
+Why is the LSTM a good choice for language modeling?
+How does a LSTM system compare to a SMT system?
+What can allow a model to focus on ony part of an input?
+What does an LSTM learn?
+What is a DNN?
+How close is the LSTM to state-of-the-art?
+Why does the LSTM do well on long sentences?
+What kind of problem is machine translation?
+What is one of the most important contributions to the paper?
+What was the scoring metric used in evaluating the results?

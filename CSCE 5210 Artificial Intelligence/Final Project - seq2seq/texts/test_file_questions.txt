@@ -1,0 +1,2 @@
+What is a neural network?
+How are neural connections modeled?
